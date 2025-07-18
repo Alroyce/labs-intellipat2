@@ -14,6 +14,9 @@ sudo echo "MAVEN_HOME=\"/opt/maven\"" >> /etc/profile
 sudo echo "PATH=\$MAVEN_HOME/bin:\$PATH" >> /etc/profile
 source /etc/profile
 ````
+wget https://dlcdn.apache.org/maven/maven-3/3.8.9/binaries/apache-maven-3.8.9-bin.tar.gz
+
+
 ### Install Jenkins
 ```
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
