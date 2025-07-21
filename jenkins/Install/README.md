@@ -14,7 +14,13 @@ sudo echo "MAVEN_HOME=\"/opt/maven\"" >> /etc/profile
 sudo echo "PATH=\$MAVEN_HOME/bin:\$PATH" >> /etc/profile
 source /etc/profile
 ````
-wget https://dlcdn.apache.org/maven/maven-3/3.8.9/binaries/apache-maven-3.8.9-bin.tar.gz
+
+cd /tmp ; sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.11/binaries/apache-maven-3.9.11-bin.tar.gz
+cd /tmp ; sudo tar -xzf apache-maven-3.9.11-bin.tar.gz -C /opt/
+mv /opt/apache-maven-3.9.11 /opt/maven
+sudo echo "MAVEN_HOME=\"/opt/maven\"" >> /etc/profile
+sudo echo "PATH=\$MAVEN_HOME/bin:\$PATH" >> /etc/profile
+source /etc/profile
 
 
 ### Install Jenkins
